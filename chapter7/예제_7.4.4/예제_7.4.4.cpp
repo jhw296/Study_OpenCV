@@ -10,7 +10,7 @@ int main() {
         cin >> no;
         if(no == 0) break;
 
-        string frame = format("./test_car/%02d.jpg", no);
+        string frame = format("../test_car/%02d.jpg", no);
         Mat image = imread(frame, 1);
         if(image.empty()) {
             cout << to_string(no) + "번 영상 파일이 없습니다. " << endl;
